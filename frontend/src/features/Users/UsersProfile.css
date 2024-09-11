@@ -1,0 +1,94 @@
+
+.custom-button {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+    background: linear-gradient(to right, #6366f1, #a855f7); 
+    /* border: none; */
+}
+
+.custom-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: inherit;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: transparent; 
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-button .button-text {
+    position: relative;
+    z-index: 10;
+}
+
+.follow-button:hover::before {
+    left: -100%;
+    right: 100%;
+}
+
+.follow-button:hover::after {
+    left: 0;
+    right: 0;
+}
+
+.follow-button::before {
+    background: linear-gradient(to right,#a855f7, #6366f1);
+}
+
+.unfollow-button{
+    background: linear-gradient(to right,#a855f7, #6366f1);
+    color: #a855f7;
+    border: 2px solid;
+    background-clip: padding-box;
+    outline: linear-gradient(to right,#a855f7, #6366f1);
+}
+
+.unfollow-button:hover{
+    color: white;
+}
+.unfollow-button::after {
+    background: white;
+}
+
+.unfollow-button:hover::after {
+    left: 100%;
+    right: -100%;
+}
+
+.unfollow-button:hover::before {
+    left: 0;
+    right: 0;
+}
+
+.message-button:hover::before{
+    left: -100%;
+    right: 100%;
+}
+.message-button:hover::after{
+    left: 0;
+    right: 0;
+}
+.message-button::before {
+    background: linear-gradient(to right, #a855f7, #6366f1);
+}

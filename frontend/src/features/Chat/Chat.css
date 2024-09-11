@@ -1,0 +1,8 @@
+
+  .custom-scrollbar {
+    scrollbar-width: none; /* Makes the scrollbar thinner */
+  }
+  .transition-height {
+    transition: height 0.3s ease;
+  }
+  

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply global styles for body and root */
+body {
+  @apply bg-gray-100 text-gray-800 antialiased;
+  font-family: 'Inter', sans-serif; /* Clean, modern font */
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #2d2d2d; /* Dark background */
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a; /* Darker thumb */
+  border-radius: 10px;
+  border: 2px solid #2d2d2d; /* Thumb border */
+}
+
+/* Scrollbar thumb hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6b6b6b; /* Lighter on hover */
+}
